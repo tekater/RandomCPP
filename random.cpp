@@ -47,11 +47,12 @@ int main()
 			}
 		}
 		else {
-			cout << "Вы угадали\n";
+			cout << "";
 		}
 		i++;
 	} while (num != magic_num);
-	cout << i << "попыток";
+	cout << "\nЧисло: " << magic_num << "\nВы угадали\n";
+	cout << "\n" << i << " попыток\n";
 	time_t end = time(NULL);
 	//clock_t end = clock();
 	cout << "TIME: " << (end - begin) << " sec.";
